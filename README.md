@@ -1,13 +1,13 @@
 # Automatic Personality Recognition on Multiparty Dialogue
 
-## Character Mining Project
+## Task description
 
 Multiparty Personality Recognition requires machines to determine the main speaker's personality from a short conversation in binary Big Five personality traits:
-  - **Agreeableness (AGR)**: trustworthy, straightforward, generous versus unreliable, complicated, meager, and boastful
-  - **Conscientiousness (CON)**: efficient and organized versus sloppy and careless
-  - **Extroversion (EXT)**:  outgoing, talk- ative, and energetic versus reserved and solitary
-  - **Openness (OPN)**: inventive and curious versus dogmatic and cautious
-  - **Neuroticism (NEU)**: sensitive and nervous versus secure and confident
+  - **Agreeableness (AGR)**: trustworthy, straightforward, generous vs. unreliable, complicated, meager, and boastful
+  - **Conscientiousness (CON)**: efficient and organized vs. sloppy and careless
+  - **Extroversion (EXT)**:  outgoing, talkative, and energetic vs. reserved and solitary
+  - **Openness (OPN)**: inventive and curious vs. dogmatic and cautious
+  - **Neuroticism (NEU)**: sensitive and nervous vs. secure and confident
 
 This is a part of the [Character Mining](../../../character-mining) project led by the [Emory NLP](http://nlp.mathcs.emory.edu) research group.
 
@@ -41,23 +41,11 @@ The following shows a multiparty dialogue between **Monica** and **Paul**.
 		<col class="col-xs-3 col-md-3" />
 	</colgroup>
 	<tbody>
-		<tr>
-			<th>Extraverted:&nbsp;&nbsp;</th>
-			<th><input name="extraverted" type="radio" value="1" /> 1</th>
-			<th><input name="extraverted" type="radio" value="0" /> 0</th>
-			<th><input name="extraverted" type="radio" value="-1" /> -1</th>
-		</tr>
-		<tr>
+	    <tr>
 			<th>Agreeable:&nbsp;&nbsp;</th>
 			<th><input name="agreeable" type="radio" value="1" /> 1</th>
 			<th><input name="agreeable" type="radio" value="0" /> 0</th>
 			<th><input name="agreeable" type="radio" value="-1" /> -1</th>
-		</tr>
-		<tr>
-			<th>Emotionally Stable:&nbsp;&nbsp;</th>
-			<th><input name="stable" type="radio" value="1" /> 1</th>
-			<th><input name="stable" type="radio" value="0" /> 0 </th>
-			<th><input name="stable" type="radio" value="-1" /> -1 </th>
 		</tr>
 		<tr>
 			<th>Conscientious:&nbsp;&nbsp;</th>
@@ -66,10 +54,22 @@ The following shows a multiparty dialogue between **Monica** and **Paul**.
 			<th><input name="conscientious" type="radio" value="-1" /> -1 </th>
 		</tr>
 		<tr>
+			<th>Extraverted:&nbsp;&nbsp;</th>
+			<th><input name="extraverted" type="radio" value="1" /> 1</th>
+			<th><input name="extraverted" type="radio" value="0" /> 0</th>
+			<th><input name="extraverted" type="radio" value="-1" /> -1</th>
+		</tr>
+		<tr>
 			<th>Open to experience:&nbsp;&nbsp;</th>
 			<th><input name="open" type="radio" value="1" /> 1</th>
 			<th><input name="open" type="radio" value="0" /> 0</th>
 			<th><input name="open" type="radio" value="-1" /> -1</th>
+		</tr>
+		<tr>
+			<th>Emotionally Stable:&nbsp;&nbsp;</th>
+			<th><input name="stable" type="radio" value="1" /> 1</th>
+			<th><input name="stable" type="radio" value="0" /> 0 </th>
+			<th><input name="stable" type="radio" value="-1" /> -1 </th>
 		</tr>
 	</tbody>
 </table>
@@ -87,10 +87,7 @@ This conversation has the following fields:
   - `EXT`: 1
   - `OPN`: 1
   - `NEU`: 0
-  - `text`: The `text` column consists conversation text string in simple HTML format. 
-  Each text starts with its scene id (e.g. s01_e01_c05) and the main speaker (e.g. Paul).
-  Each utterance is separated by `<br><br>` and each speaker is highlighted with `<br></br>`.
-
+  - `text`: 
 
 ```html
 <b>s01_e01_c05(0) for Paul</b><br><br>
@@ -100,6 +97,10 @@ This conversation has the following fields:
 <b>Paul</b>: Well, you might try accidentally breaking something valuable of hers, say her-<br><br>
 <b>Monica Geller</b>: -leg?<br><br>
 ```
+
+Note: The `text` column consists conversation text string in simple HTML format. 
+  Each text starts with its scene id (e.g. s01_e01_c05) and the main speaker (e.g. Paul).
+  Each utterance is separated by `<br><br>` and each speaker is highlighted with `<br></br>`.
 
 
 ## Citation
