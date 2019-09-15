@@ -1,4 +1,4 @@
-# Automatic Personality Recognition on Multiparty Dialogue
+# FriendsPersona: Personality Recognition on Multiparty Dialogue
 
 ## Task description
 
