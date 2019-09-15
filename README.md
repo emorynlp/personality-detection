@@ -98,7 +98,7 @@ This conversation has the following fields:
 <b>Monica Geller</b>: -leg?<br><br>
 ```
 
-Note: The `text` column consists conversation text string in simple HTML format. 
+Note: The `text` column consists conversation text strings in simple HTML format. 
   Each text starts with its scene id (e.g. s01_e01_c05) and the main speaker (e.g. Paul).
   Each utterance is separated by `<br><br>` and each speaker is highlighted with `<br></br>`.
 
