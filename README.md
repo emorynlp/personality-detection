@@ -105,7 +105,7 @@ Note: The `text` column consists conversation text strings in simple HTML format
 
 ## Citation
 
-* [Modeling Personality with Attentive Networks and Contextual Embeddings](). [Hang Jiang](https://www.linkedin.com/in/hjian42), Xianzhe Zhang, and Jinho D. Choi. ([pdf](); [poster]())
+* [Modeling Personality with Attentive Networks and Contextual Embeddings](https://arxiv.org/abs/1911.09304). [Hang Jiang](https://hjian42.github.io/), Xianzhe Zhang, and Jinho D. Choi. ([pdf](https://arxiv.org/abs/1911.09304); [poster]())
 
 ## Contact
 
