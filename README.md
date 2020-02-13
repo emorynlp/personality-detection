@@ -105,7 +105,7 @@ Note: The `text` column consists conversation text strings in simple HTML format
 
 ## Citation
 
-* [Modeling Personality with Attentive Networks and Contextual Embeddings](https://arxiv.org/abs/1911.09304). [Hang Jiang](https://hjian42.github.io/), Xianzhe Zhang, and Jinho D. Choi. ([pdf](https://arxiv.org/abs/1911.09304); [poster]())
+* [Automatic Text-based Personality Recognition on Monologues and Multiparty Dialogues Using Attentive Networks and Contextual Embeddings](https://arxiv.org/abs/1911.09304). [Hang Jiang](https://hjian42.github.io/), Xianzhe Zhang, and Jinho D. Choi. ([pdf](https://arxiv.org/abs/1911.09304); [poster](https://hjian42.github.io/files/aaai2020-poster.pdf); [slide](https://hjian42.github.io/files/435_Jiang.pdf))
 
 ## Contact
 
